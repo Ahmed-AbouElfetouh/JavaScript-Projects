@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="TE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Loan Calculator</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap">
+
+  <script src="app.js" defer></script>
+
+</head>
+
+<body>
+  <div class="app">
+    <div class="container">
+      <div class="app-content" id="app-inputs">
+        <div class="head">
+          <h1>Loan Calculator</h1>
+        </div>
+        <form>
+          <div>
+            <span>$</span>
+            <input type="number" placeholder="Loan Amount" id="loan-amount" >
+          </div>
+          <div>
+            <span>%</span>
+            <input type="number" placeholder="Interest" id="interest" >
+          </div>
+          <div>
+            <span>$</span>
+            <input type="number" placeholder="Monthly Salary" id="monthly-salary" >
+          </div>
+          <div>
+            <input type="number" placeholder="Years to Repay" id="years-to-rapay" >
+          </div>
+          <input type="submit" value="Calculate" id="calc-btn">
+        </form>
+      </div>
+      <div class="app-results" id="results-container">
+        <div class="header">
+          <h2>Results</h2>
+        </div>
+        <div class="info">
+          <div>
+            <p>Monthly Payment</p>
+            <span id="monthly-payment"></span>
+          </div>
+          <div>
+            <p>Total Payment</p>
+            <span id="total-payment"></span>
+          </div>
+          <div>
+            <p>Total Interest</p>
+            <span id="total-interest"></span>
+          </div>
+          <div>
+            <p>Can you afford it?</p>
+            <span id="offord"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

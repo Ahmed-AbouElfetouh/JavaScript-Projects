@@ -1,0 +1,148 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #343A40;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 576px) {
+  .container {
+      width: 540px
+  }
+}
+/* End Global Style */
+
+/* Start */
+.app {
+  margin-top: 30px;
+}
+.app .app-content,
+.app .app-results{
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
+  transition: 0.5s ease-in-out;
+}
+.app .app-content .head,
+.app .app-results .header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.app .app-content .head h1,
+.app .app-results .header h2 {
+  font-weight: normal;
+}
+.app .app-content form > div {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+.app .app-content form > div span {
+  display: inline-block;
+  width: 30px;
+  height: 40px;
+  padding: 5px;
+  background-color: #E9ECEF;
+  color: #333;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d1d1d1;
+  border-right: 0;
+  border-radius: 4px 0 0 4px;
+}
+.app .app-content form > div input {
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #d1d1d1;
+  outline: none;
+  transition: border 0.3s ease-in-out;
+}
+.app .app-content form > div:not(:last-of-type) input {
+  width: calc(100% - 30px);
+  border-radius: 0 4px 4px 0;
+}
+.app .app-content form > div:last-of-type input {
+  width: 100%;
+  border-radius: 4px;
+}
+.app .app-content form > div input[type="number"]:focus {
+  border: 1px solid #0FA8DB;
+}
+.app .app-content form input[type="submit"] {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  background-color: #343A40;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.app .app-results {
+  position: relative;
+  z-index: -1;
+  top: -348px;
+}
+.app .app-results .info > div {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #E9ECEF;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+.app .app-results .info > div p {
+  margin-right: 30px;
+  position: relative;
+}
+.app .app-results .info > div p::after {
+  content: "";
+  position: absolute;
+  right: -15px;
+  top: -10px;
+  width: 1px;
+  height: calc(100% + 20px);
+  background-color: #d1d1d1;
+}
+/* JS Classes */
+.handel-result-div {
+  top: 0 !important;
+  border-radius: 0 0 4px 4px !important;
+}
+.handel-inputs-div {
+  border-radius: 4px 4px 0 0 !important;
+}
+.popup-message  {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: fit-content;
+  color: #fff;
+  transition: 0.5s ease-in-out;
+}
+.popup-message p {
+  padding: 10px 80px;
+}
+.move-down {
+  top: 0 !important;
+}
+.wrong {
+  background-color: red;
+}
+/* End */

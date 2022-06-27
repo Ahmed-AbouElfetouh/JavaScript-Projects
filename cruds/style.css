@@ -1,0 +1,85 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #222;
+  color: #fff;
+  font-family: "system-ui";
+}
+.crud {
+  width: 80%;
+  margin: 20px auto;
+}
+.crud .head {
+  text-align: center;
+  text-transform: uppercase;
+}
+.crud input {
+  width: 100%;
+  height: 30px;
+  background-color: #111;
+  color: #fff;
+  margin: 4px 0;
+  padding: 4px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  transition: .3s;
+}
+.crud input:focus {
+  transform: scale(1.1);
+  background-color: #000;
+}
+.crud .inputs .price input{
+  width: 20%;
+}
+.crud .inputs .total {
+  background-color: #9f0d02;
+  padding: 5px;
+  border-radius: 6px;
+}
+.crud .inputs .total::before {
+  content: "Total: ";
+}
+.crud button {
+  width: 100%;
+  height: 30px;
+  padding: 10px 0;
+  background-color: rgb(34, 3, 39);
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+}
+.crud button:hover {
+  background-color: #51015D;
+  letter-spacing: 1px;
+}
+.crud .outputs div {
+  display: flex;
+  justify-content: space-between;
+}
+.crud .outputs div button:not(.delete-all button) {
+  width: 45%;
+}
+.delete-all {
+  margin: 20px 0;
+}
+.delete-all button {
+  width: 100%;
+}
+.crud .outputs table {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+.crud .outputs table th {
+  text-transform: uppercase;
+}
+.crud .outputs table tr,
+.crud .outputs table td {
+  padding: 5px;
+}

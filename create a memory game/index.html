@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="create a memory game">
+    <meta name="description" content="create a memory game">
+    <title>create a memory game</title>
+
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+
+<body>
+    <div class="control-buttons">
+        <span id="start-game">Start Game</span>
+    </div>
+    <div class="info-container">
+        <div class="name">
+            Hello: <span id="user-name"></span>
+        </div>
+        <div>
+            <form action="">
+                <input id="blocks-number" type="number">
+                <button id="create-blocks">Create Game Blocks</button>
+            </form>
+        </div>
+        <div class="count-down" id="count-down">
+            
+        </div>
+        <div class="tries">
+            Wrong Tries: <span id="wrong">0</span>
+        </div>
+    </div>
+    <div class="memory-game-blocks" id="memory-game-blocks">
+        
+    </div>
+    <audio id="success" src="audio/Pew_Pew-DKnight556-1379997159.wav" preload="auto"></audio>
+    <audio id="fail" src="audio/Fart-Common-Everyday-Fart_Mike-Koenig.wav" preload="auto"></audio>
+</body>
+
+</html>

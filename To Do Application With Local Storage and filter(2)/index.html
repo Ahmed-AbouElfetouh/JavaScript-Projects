@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="TE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>To-Do List</title>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap">
+
+</head>
+
+<body>
+  <div class="app" id="app">
+    <div class="container">
+        <div class="change-color">
+          <form>
+            <input type="checkbox" id="checkbox" class="checkbox">
+            <label for="checkbox" class="label">
+              <i class="fa-solid fa-moon moon"></i>
+              <i class="fa-solid fa-sun sun"></i>
+              <div class="ball"></div>
+            </label>
+          </form>
+        </div>
+        <div class="add-tasks special">
+          <h2>Task List</h2>
+          <form>
+            <input type="text" id="new-task" class="my-input">
+            <label for="new-task">
+              New task
+            </label>
+            <input type="submit" value="Add Task" id="add-task">
+          </form>
+        </div>
+        <div class="tasks special">
+          <h2>Tasks</h2>
+          <form>
+            <input type="search" id="filter-tasks" class="my-input">
+            <label for="filter-tasks">
+              Filter tasks
+            </label>
+            <div class="all-tasks" id="all-tasks">
+            </div>
+            <input type="submit" value="Clear Tasks" id="delete-all">
+          </form>
+        </div>
+    </div>
+  </div>
+  <div class="app-popup" id="app-popup">
+    <h2>Are you sure?</h2>
+    <div class="buttons">
+      <button id="yes" class="yes">Yes</button>
+      <button id="no" class="no">No</button>
+    </div>
+  </div>
+
+  <script src="js/all.min.js"></script>
+  <script src="js/app.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: 0.3s linear;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 576px) {
+  .container {
+      width: 540px
+  }
+}
+@media (min-width: 768px) {
+  .container {
+      width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+      width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+      width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+      width: 1320px;
+  }
+}
+/* End Global Style */
+
+/* Start */
+.dark-theme {
+  background-color: #292c35;
+}
+.light-color {
+  color: #fff;
+}
+.app {
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 6px;
+}
+.app .change-color form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.app .change-color form .checkbox {
+  opacity: 0;
+}
+.app .change-color form .label {
+  padding: 5px;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  background-color: #111111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.app .change-color form .label .moon {
+  color: #f1c40f;
+}
+.app .change-color form .label .sun {
+  color: #f39c12
+}
+.app .change-color form .label .ball {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: 0.3s linear;
+}
+.app .change-color form .checkbox:checked + .label .ball {
+  transform: translate(24px);
+}
+.app .add-tasks {
+  margin-bottom: 30px;
+}
+.app .add-tasks h2,
+.app .tasks h2 {
+  font-weight: normal;
+  margin: 0;
+  transition: 0.3s linear;
+}
+.app .add-tasks form,
+.app .tasks form {
+  margin-top: 40px;
+}
+.app .add-tasks form input[type="text"],
+.app .tasks form input[type="search"] {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #9e9e9e;
+  padding: 10px;
+  background-color: unset;
+}
+.app .add-tasks form input[type="text"]:focus,
+.app .tasks form input[type="search"]:focus {
+  border-bottom: 1px solid #2BBBAD;
+}
+.app .add-tasks form label,
+.app .tasks form label {
+  position: relative;
+  top: -30px;
+  font-size: 14px;
+  transition: 0.3s linear;
+}
+.app .add-tasks form input[type="text"]:focus + label,
+.app .tasks form input[type="search"]:focus + label {
+  top: -60px;
+  color: #2BBBAD;
+}
+.app .tasks form .all-tasks {
+  margin-bottom: 20px;
+}
+.app .tasks form .all-tasks .task {
+  background-color: #2BBBAD;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+/* .app .tasks form .all-tasks .task.finish {
+  text-decoration: line-through;
+} */
+.app .tasks form .all-tasks .task p {
+  color: #fff;
+}
+.app .tasks form .all-tasks .task p.finish {
+  text-decoration: line-through;
+}
+.app .tasks form .all-tasks .task .wrong-mark {
+  color: #ffab40;
+  font-weight: bold;
+  font-size: 25px;
+  cursor: pointer;
+}
+.app .add-tasks form input[type="submit"],
+.app .tasks form input[type="submit"] {
+  margin-left: -10px;
+  padding: 10px 20px;
+  display: block;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.app .add-tasks form input[type="submit"] {
+  background-color: #2BBBAD;
+}
+.app .tasks form input[type="submit"] {
+  background-color: #000000;
+}
+.app-popup {
+  width: 350px;
+  position: absolute;
+  top: -128px;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+.app-popup.down {
+  top: 0;
+}
+.app-popup h2 {
+  font-weight: normal;
+  margin: 0;
+}
+.app-popup .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+.app-popup .buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+.app-popup .buttons .yes {
+  background-color: #000000;
+}
+.app-popup .buttons .no {
+  background-color: #2BBBAD;
+}
+.disabled {
+  pointer-events: none;
+}
+/* End */

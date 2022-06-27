@@ -1,0 +1,76 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #E4E8EA;
+  
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+}
+/* End Global Style */
+
+/* Start */
+.app .app-content{
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: minmax(120px, auto) repeat(5, 80px);
+}
+.app .app-content .screen {
+  position: relative;
+  background-color: #000000;
+  color: #fff;
+  grid-column: 1 / -1;
+  padding: 15px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: right;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.app .app-content .screen .previous {
+  font-size: 1.5rem;
+  opacity: .7;
+}
+.app .app-content .screen .current {
+  font-size: 2.5rem;
+}
+.app .app-content .screen .history {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  opacity: .7;
+} 
+.app .app-content button {
+  padding: 10px;
+  border: 1px solid #d1d1d1;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.app .app-content button:hover {
+  background-color: #0FA8DB;
+}
+.app .app-content .ac-btn {
+  grid-column: 1 / 3;
+}
+.app .app-content .equal-btn {
+  grid-column: 3 / 5;
+  background-color: #0FA8DB;
+}
+/* End */

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="TE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book List</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap">
+
+    <script src="app.js" defer></script>
+
+</head>
+
+<body>
+  <div class="app">
+    <div class="container">
+      <h1>Add Book</h1>
+      <form>
+        <div>
+          <label for="book-title">Book Title</label>
+          <input type="text" id="book-title">
+        </div>
+        <div>
+          <label for="book-author">Author</label>
+          <input type="text" id="book-author">
+        </div>
+        <div>
+          <label for="book-isbn">ISBN</label>
+          <input type="text" id="book-isbn">
+        </div>
+        <div>
+          <input type="submit" value="SUBMIT" id="add-book">
+        </div>
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN</th>
+          </tr>
+        </thead>
+        <tbody id="t-body">
+        </tbody>
+      </table>
+      <button id="clear-books">CLEAR ALL BOOKS</button>
+    </div>
+  </div>
+  <div class="container">
+    
+  </div>
+  
+</body>
+
+</html>

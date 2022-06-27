@@ -1,0 +1,169 @@
+:root {
+  --main-color: #2196f3;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+  list-style: none;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.game {
+  background-color: #eee;
+  min-height: 100vh;
+}
+.container {
+  margin: auto;
+  max-width: 900px;
+}
+.container .levels select {
+  display: block;
+  border: unset;
+  outline: unset;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 15px;
+  font-size: 16px;
+  margin: 20px auto;
+}
+.container .levels .reload {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 15px;
+  background-color: #009688;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+}
+.name {
+  background-color: var(--main-color);
+  color: white;
+  padding: 20px;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+.message {
+  background-color: white;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 6px;
+  text-align: center;
+  display: none;
+}
+.message span {
+  font-weight: bold;
+  color: #009688;
+}
+.message span::before {
+  content: '[ ';
+}
+.message span::after {
+  content: ' ]';
+}
+.start {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #009688;
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+}
+.the-word {
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  color: var(--main-color);
+  user-select: none;
+}
+.input {
+  margin: 15px 0;
+  width: 100%;
+  display: block;
+  padding: 15px;
+  border: 3px solid var(--main-color);
+  font-size: 25px;
+  text-transform: capitalize;
+  border-radius: 6px;
+  caret-color: var(--main-color);
+}
+.input:focus {
+  outline: none;
+}
+.upcoming-words {
+  background-color: white;
+  margin: 15px 0;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.upcoming-words div {
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bold;
+  margin: 4px;
+  padding: 10px;
+  border-radius: 6px;
+}
+.control {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px;
+}
+.control span {
+  font-weight: bold;
+  color: #009688;
+}
+
+.lose,
+.win {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 100px;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
+}
+.lose {
+  color: red;
+}
+.win {
+  color: var(--main-color);
+}
+.info {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 15px;
+}
+.info h3 {
+  margin-bottom: 10px;
+}
+.info ul li {
+  line-height: 1.7;
+}
+.info ul li span {
+  color: #009688;
+  font-weight: bold;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="hangman game">
+    <meta name="description" content="hangman game">
+    <title>hangman game</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+
+<body>
+
+    <div class="container">
+        <div class="game-info">
+            <div class="game-name">Hungman Game</div>
+            <div class="category">
+                Word From: <span id="word"></span>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="hangman-draw" id="hangman-draw">
+                <div class="the-draw" id="the-draw">
+                    <div class="the-stand"></div>
+                    <div class="the-hang"></div>
+                    <div class="the-rope"></div>
+                    <div class="the-man">
+                        <div class="head"></div>
+                        <div class="body"></div>
+                        <div class="hands"></div>
+                        <div class="legs"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="letters" id="letters">
+
+            </div>
+        </div>
+        <hr>
+        <div class="letters-guess" id="letters-guess">
+            
+        </div>
+    </div>
+    <audio id="success" src="audio/Pew_Pew-DKnight556-1379997159.wav" preload="auto"></audio>
+    <audio id="fail" src="audio/Fart-Common-Everyday-Fart_Mike-Koenig.wav" preload="auto"></audio>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #e1e1e1
+}
+.todo-container {
+    width: 800px;
+    margin: 30px auto 0;
+    background-color: #f6f6f6
+}
+.todo-container .add-task {
+    padding: 15px;
+    background-color: #009688;
+    position: relative
+}
+.todo-container .add-task input {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    width: calc(100% - 15px);
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-size: 20px;
+}
+.todo-container .add-task span {
+    width: 43px;
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+    border-radius: 50%;
+    color: #009688;
+    background-color: #fff;
+    position: absolute;
+    right: 14px;
+    font-size: 35px;
+    cursor: pointer;
+    transition: transform .5s ease-in-out;
+}
+.todo-container .add-task span:hover {
+    transform: rotate(180deg);
+}
+.todo-container .tasks-content {
+    padding: 15px
+}
+.todo-container .tasks-content .tasks-message {
+    color: #777;
+    font-size: 15px
+}
+.todo-container .tasks-content > span {
+    display: block;
+    background-color: #fff;
+    padding: 10px
+}
+.todo-container .tasks-content > span:not(:last-child) {
+    margin-bottom: 10px
+}
+.todo-container .tasks-content .task-box .delete {
+    float: right;
+    padding: 4px 10px;
+    color: #fff;
+    background-color: #009688;
+    cursor: pointer;
+    font-size: 14px;
+}
+.todo-container .tasks-content .task-box.finish {
+    text-decoration: line-through
+}
+.todo-stats {
+    width: 800px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo-stats .tasks-count{
+    
+    
+    padding: 10px
+}
+.todo-stats .tasks-completed {
+    padding: 10px
+}
+.todo-stats .tasks-count span,
+.todo-stats .tasks-completed span,
+.todo-stats .delete-all button,
+.todo-stats .complete-all button {
+    padding: 1px 5px;
+    color: #fff;
+    background-color: #009688;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+.todo-stats button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
